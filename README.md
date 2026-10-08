@@ -58,3 +58,11 @@ Please follow the usage policies and rate limits of OpenStreetMap, Nominatim, an
 ## Note
 
 Mock locations are an Android developer feature. Some apps may detect or reject mock locations. Use fakeGPS for development and testing.
+
+## Screenshot
+
+<img src="image/fakecurrentlocation.png" alt="fakecurrentlocation" width="600">
+
+<img src="image/runingfakelocation.png" alt=runingfakelocation" width="600">
+
+<img src="image/serachaddress.png" alt="API Workbench screenshot" width="600">
