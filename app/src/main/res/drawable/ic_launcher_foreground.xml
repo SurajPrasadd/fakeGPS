@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Dashed Radar Ring (Rendered as 8 explicit arc paths) -->
+    <path
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M 72.23,35.77 A 26,26 0 0,1 80,54
+                          M 72.23,72.23 A 26,26 0 0,1 54,80
+                          M 35.77,72.23 A 26,26 0 0,1 28,54
+                          M 35.77,35.77 A 26,26 0 0,1 54,28
+                          M 54,28 A 26,26 0 0,1 72.23,35.77
+                          M 80,54 A 26,26 0 0,1 72.23,72.23
+                          M 54,80 A 26,26 0 0,1 35.77,72.23
+                          M 28,54 A 26,26 0 0,1 35.77,35.77" />
+
+    <!-- Crosshair Markers -->
+    <path
+        android:strokeColor="#0EA5E9"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M 54,16 L 54,26 M 54,82 L 54,92 M 16,54 L 26,54 M 82,54 L 92,54" />
+
+    <!-- Main Pin Outer Glow -->
+    <path
+        android:fillColor="#0284C7"
+        android:fillType="evenOdd"
+        android:pathData="M54,23 c-11.6,0 -21,9.4 -21,21 c0,16 21,41 21,41 s21,-25 21,-41 c0,-11.6 -9.4,-21 -21,-21 z" />
+
+    <!-- Main Pin Body -->
+    <path
+        android:fillColor="#38BDF8"
+        android:fillType="evenOdd"
+        android:pathData="M54,25 c-10,0 -18,8 -18,18 c0,14 18,36 18,36 s18,-22 18,-36 c0,-10 -8,-18 -18,-18 z" />
+
+    <!-- Pin Dark Inner Center -->
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M54,34 a9,9 0 1,0 0.001,0 z" />
+
+    <!-- Center Pulse Core -->
+    <path
+        android:fillColor="#F43F5E"
+        android:pathData="M54,38 a5,5 0 1,1 -0.001,0 z" />
+
+</vector>
