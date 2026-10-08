@@ -63,6 +63,6 @@ Mock locations are an Android developer feature. Some apps may detect or reject 
 
 <img src="image/fakecurrentlocation.png" alt="fakecurrentlocation" width="200">
 
-<img src="image/runingfakelocation.png" alt=runingfakelocation" width="200">
+<img src="image/runingfakelocation.png" alt="runingfakelocation" width="200">
 
 <img src="image/serachaddress.png" alt="API Workbench screenshot" width="200">
