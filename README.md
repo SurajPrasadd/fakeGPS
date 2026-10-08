@@ -1,40 +1,60 @@
 # fakeGPS
 
-An Android mock-location app for setting a simulated GPS position on a map or
-playing back a driving route at a chosen speed.
+An Android app for setting a mock GPS location or simulating a driving route at a selected speed.
 
 ## Features
 
-- Choose a location by tapping the map or searching for a place or Indian PIN code.
-- Simulate a fixed GPS location.
-- Plan a driving route between a start and destination, then simulate movement
-  along it at an adjustable speed.
-- View route progress and estimated time, with a foreground notification for
-  stopping an active simulation.
+* Select a location on the map or search for a place or Indian PIN code.
+* Set a fixed mock GPS location.
+* Create and simulate driving routes.
+* Adjust simulation speed.
+* View route progress and estimated time.
+* Stop an active simulation from the notification.
 
 ## Requirements
 
-- Android Studio with Android SDK 37 installed.
-- A device or emulator running Android 8.0 (API 26) or later.
+* Android Studio
+* Android SDK 37
+* Android 8.0 (API 26) or later
 
-## Build and run
+## Build & Run
 
-1. Open the project in Android Studio and let Gradle sync.
-2. Build and install the `app` configuration on a device or emulator.
-3. On the device, enable Developer options and set **Select mock location app**
-   to **fakeGPS**.
-4. Grant the location and notification permissions when prompted.
-5. In the app, choose a point on the map or search for a place and tap
-   **Set location**. To simulate a route, choose a start and destination, tap
-   **Directions**, adjust the speed, and tap **Start**.
+1. Open the project in Android Studio.
+2. Sync Gradle and build the `app`.
+3. Install the app on a device or emulator.
+4. Enable **Developer options**.
+5. Select **fakeGPS** under **Mock location app**.
+6. Grant the required permissions.
+7. Select a location and tap **Set location**.
 
-Mock locations are an Android developer feature. Other apps may detect or reject
-them; use this app for development and testing.
+For route simulation, select a start and destination, tap **Directions**, choose a speed, and tap **Start**.
 
-## Map and routing services
+## Map & Routing
 
-The map uses [OpenStreetMap](https://www.openstreetmap.org/) data and tiles.
-Place search uses the public [Nominatim](https://nominatim.org/) service, and
-driving routes use the public [OSRM demo server](https://project-osrm.org/).
-These public services have usage policies and availability limits; review their
-terms before use and do not rely on them for production or high-volume traffic.
+fakeGPS uses free public services:
+
+* **OpenStreetMap** — map data and tiles
+* **Nominatim** — place and PIN-code search
+* **OSRM** — driving routes
+
+### Contact Email
+
+The app includes:
+
+`app/src/main/res/raw/contact_emails.json`
+
+Add a valid contact email before using the public OpenStreetMap/Nominatim services.
+
+```json
+{
+  "email": "your-email@example.com"
+}
+```
+
+The email is used to identify the application when accessing the public services and provides a contact address for service operators.
+
+Please follow the usage policies and rate limits of OpenStreetMap, Nominatim, and OSRM. For production or high-volume usage, use a dedicated service or your own infrastructure.
+
+## Note
+
+Mock locations are an Android developer feature. Some apps may detect or reject mock locations. Use fakeGPS for development and testing.
